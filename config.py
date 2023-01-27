@@ -14,7 +14,7 @@ API_HASH = os.environ.get("API_HASH", "6766d1e1d9fdddf7e06171829958bfad")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "5850329168:AAEpCUV2AYfIZKxvtKgQvcjX5r7xLx7gOow")
 DROPLINK_API = os.environ.get("DROPLINK_API")
 MDISK_API = os.environ.get("MDISK_API", "oPrFaMs3aPyqiPSt6LJn")
-ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split("1826980364,1009293650")) if os.environ.get("ADMINS") else []
+ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split(",")) if os.environ.get("ADMINS") else []
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://kgconvert:kgconvert@cluster0.kxclnsn.mongodb.net/?retryWrites=true&w=majority")
 WEBSITE = os.environ.get('WEBSITE')
